@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Define initial and final velocities, and time
+    double initial_velocity = 0;
+    double final_velocity = 10000;
+    double time = 4 * 60; // convert minutes to seconds
+    double acceleration;
+
+    // Calculate acceleration using the kinematic equation
+    acceleration = (final_velocity - initial_velocity) / time;
+
+    // Display the calculated acceleration
+    printf("The acceleration of the object is %.2lf m/s^2\n", acceleration);
+
+    return 0;
+}
